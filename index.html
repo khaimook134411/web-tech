@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8"/>
+ <title>this is title</title>
+ <link rel="stylesheet" href="nav.css">
+ <script src="https://code.jquery.com/jquery-1.9.0rc1.js"></script>
+ <script src="https://code.jquery.com/jquery-migrate-1.0.0rc1.js"></script>
+ <script src="https://kit.fontawesome.com/54cecfcf8f.js" crossorigin="anonymous"></script>
+    <script>
+        function load(id,path){
+            path = 'https://raw.githubusercontent.com/khaimook134411/web-tech/main/'+path
+            $(function(){
+                $(id).load(path)
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+      <div class="header">
+      <img src="A.jpg" alt="head" width="100%" height="250px"> 
+      </div>
+    </div>
+
+<div class="navigation">
+
+ <div class="box" onclick="load('#content','home.html')">
+   <i class="fas fa-home"></i>
+   <span class="text-box">&nbsp;&nbsp;Home</span>
+ </div>
+ 
+ <div class="box" onclick="load('#content','profile.html')">
+   <div class="icon"><i class="fas fa-id-card"></i></div>
+   <div class="text-box">&nbsp;&nbsp;Profile</div>
+ </div>
+ 
+ <div class="box" onclick="load('#content','education.html')">
+   <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+   <div class="text-box">&nbsp;&nbsp;&nbsp;Education</div>
+ </div>
+
+ <div class="box" onclick="load('#content','family.html')">
+    <div class="icon"><i class="fas fa-users"></i></div>
+    <div class="text-box">&nbsp;&nbsp;&nbsp;Family</div>
+  </div>
+
+  <div class="box" onclick="load('#content','article.html')">
+    <div class="icon"><i class="fas fa-book"></i></div>
+    <div class="text-box">&nbsp;&nbsp;&nbsp;Knowledge</div>
+  </div>
+ 
+ <div class="box" onclick="load('#content','contact.html')">
+   <div class="icon"><i class="fas fa-phone"></i></div>
+   <div class="text-box">&nbsp;&nbsp;Contact</div>
+ </div>
+</div>
+
+<div id="content">khaimook</div>
+<script>
+  load('#content','home.html');
+</script>
+</body>
+
+</html>

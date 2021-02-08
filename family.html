@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            .sectionProfile{
+                display: grid;
+                grid-template-columns: 1fr 5fr;
+            }
+            .profile{
+                box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.2);
+                padding: 20px;
+            }
+            areaProfile{
+                display: grid;
+                grid-template-columns: 1fr;
+                background-color: teal;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sectionProfile">
+            <div class="profile">
+                <img src="home.pdf" alt="profile">
+                <div class="name">My name is Khaimook</div>
+                <div class="name">I am beautiful student!</div>
+                <div class="box" onclick="load('#content','home.html')">
+                    <div class="icon"><i class="fas fa-home"></i></div>
+                    <div class="text-box">&nbsp;&nbsp;Home</div>
+                  </div>
+                  
+                  <div class="box" onclick="load('#content','profile.html')">
+                    <div class="icon"><i class="fas fa-id-card"></i></div>
+                    <div class="text-box">&nbsp;&nbsp;Profile</div>
+                  </div>
+                  
+                  <div class="box" onclick="load('#content','education.html')">
+                    <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="text-box">&nbsp;&nbsp;&nbsp;Education</div>
+                  </div>
+                 
+                  <div class="box" onclick="load('#content','family.html')">
+                     <div class="icon"><i class="fas fa-users"></i></div>
+                     <div class="text-box">&nbsp;&nbsp;&nbsp;Family</div>
+                   </div>
+                 
+                   <div class="box" onclick="load('#content','article.html')">
+                     <div class="icon"><i class="fas fa-book"></i></div>
+                     <div class="text-box">&nbsp;&nbsp;&nbsp;Article</div>
+                   </div>
+                  
+                  <div class="box" onclick="load('#content','contact.html')">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <div class="text-box">&nbsp;&nbsp;Contact</div>
+                  </div>
+            </div>
+    </body>
+</html>

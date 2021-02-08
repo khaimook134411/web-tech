@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        .sectionProfile{
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+        }
+        .profile{
+            box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.2);
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="section">
+        <div class="profile">
+            <img src="home.pdf" alt="profile">
+            <div class="name">My name is Khaimook</div>
+            <div class="name">I am beautiful student!</div>
+            <div class="box" onclick="load('#content','home.html')">
+                <div class="icon"><i class="fas fa-home"></i></div>
+                <div class="text-box">&nbsp;&nbsp;Home</div>
+              </div>
+              
+              <div class="box" onclick="load('#content','profile.html')">
+                <div class="icon"><i class="fas fa-id-card"></i></div>
+                <div class="text-box">&nbsp;&nbsp;Profile</div>
+              </div>
+              
+              <div class="box" onclick="load('#content','education.html')">
+                <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="text-box">&nbsp;&nbsp;&nbsp;Education</div>
+              </div>
+             
+              <div class="box" onclick="load('#content','family.html')">
+                 <div class="icon"><i class="fas fa-users"></i></div>
+                 <div class="text-box">&nbsp;&nbsp;&nbsp;Family</div>
+               </div>
+             
+               <div class="box" onclick="load('#content','article.html')">
+                 <div class="icon"><i class="fas fa-book"></i></div>
+                 <div class="text-box">&nbsp;&nbsp;&nbsp;Article</div>
+               </div>
+              
+              <div class="box" onclick="load('#content','contact.html')">
+                <div class="icon"><i class="fas fa-phone"></i></div>
+                <div class="text-box">&nbsp;&nbsp;Contact</div>
+              </div>
+        </div>
+        <div class="areaProfile">     
+                <!-- <h1>My profile</h1>
+                <hr align="center" width="1000"><br>  
+                <img src="https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524" alt="ProfileKH" width="200px" height="250px" >
+                <p>ชื่อเล่น ไข่มุก</p>
+                <p>Nickname Khaimook</p>
+                <p>ชื่อ นางสาวธนาพร นามสกุล วุฒิกุลประพันธ์</p>
+                <p>Name Ms.Thanaphorn Surname Wutthikunprapan</p>
+                <p>เกิดวันพุธที่ 1 พฤศจิกายน 2543</p>
+                <p>My birthday is on Wednesday 1st November 2000</p> -->
+
+                <div class="profile-head">
+                  <div class="head-img-border"><div class="head-img"></div></div>
+                  <div class="head-text">
+                    <div>
+                      <div class="head-text-name">Khaimook</div>
+                      <div class="head-text-name">Thanawat Talabtong</div>
+                      <div class="head-text-name">Khaimook</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="story">
+                
+                  <div class="story-grid">
+                    <center>
+                    <div class="border-img"><div class="story-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div></div>
+                    <div class="story-text">xxxxxx</div>
+                    </center>
+                  </div>
+
+                  <div class="story-grid">
+                    <center>
+                    <div class="border-img"><div class="story-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div></div>
+                    <div class="story-text">xxxxxx</div>
+                    </center>
+                  </div>
+
+                  <div class="story-grid">
+                    <center>
+                    <div class="border-img"><div class="story-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div></div>
+                    <div class="story-text">xxxxxx</div>
+                    </center>
+                  </div>
+
+                  <div class="story-grid">
+                    <center>
+                    <div class="border-img"><div class="story-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div></div>
+                    <div class="story-text">xxxxxx</div>
+                    </center>
+                  </div>
+
+                  <div class="story-grid">
+                    <center>
+                    <div class="border-img"><div class="story-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div></div>
+                    <div class="story-text">xxxxxx</div>
+                    </center>
+                  </div>
+
+                  <div class="story-grid">
+                    <center>
+                    <div class="border-img"><div class="story-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div></div>
+                    <div class="story-text">xxxxxx</div>
+                    </center>
+                  </div>
+
+                  <div class="story-grid">
+                    <center>
+                    <div class="border-img"><div class="story-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div></div>
+                    <div class="story-text">xxxxxx</div>
+                    </center>
+                  </div>
+                </div>
+                <!-- end story -->
+                <div class="profile-nav">
+                  <div class="profile-nav-link-active">
+                    <i class="fas fa-home"></i> Profile
+                  </div>
+
+                  <div class="profile-nav-link" onclick="load('#content','education.html')">
+                    <i class="fas fa-home"></i> Education
+                  </div>
+
+                  <div class="profile-nav-link">
+                    <i class="fas fa-home"></i> Family
+                  </div>
+
+                  <div class="profile-nav-link">
+                    <i class="fas fa-home"></i> Knowledge
+                  </div>
+
+                  <div class="profile-nav-link">
+                    <i class="fas fa-home"></i> Contact
+                  </div>
+                </div>
+
+                <center>
+                <div class="post">
+
+                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                    <div class="back-drop" onclick="document.getElementById('post-1').style.display='grid'">
+                      <div class="post-like">
+                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                      </div>
+                    </div>
+                    <div class="post-information" id="post-1">
+                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-text">
+                        <div style="text-align: right;  margin-bottom: 40px;">
+                          <i class="fas fa-times" onclick="document.getElementById('post-1').style.display='none'" ></i>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                    <div class="back-drop" onclick="document.getElementById('post-2').style.display='grid'">
+                      <div class="post-like">
+                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                      </div>
+                    </div>
+                    <div class="post-information" id="post-2">
+                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-text">
+                        <div style="text-align: right;  margin-bottom: 40px;">
+                          <i class="fas fa-times" onclick="document.getElementById('post-2').style.display='none'" ></i>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                    <div class="back-drop" onclick="document.getElementById('post-3').style.display='grid'">
+                      <div class="post-like">
+                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                      </div>
+                    </div>
+                    <div class="post-information" id="post-3">
+                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-text">
+                        <div style="text-align: right;  margin-bottom: 40px;">
+                          <i class="fas fa-times" onclick="document.getElementById('post-3').style.display='none'" ></i>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                    <div class="back-drop" onclick="document.getElementById('post-4').style.display='grid'">
+                      <div class="post-like">
+                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                      </div>
+                    </div>
+                    <div class="post-information" id="post-4">
+                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-text">
+                        <div style="text-align: right;  margin-bottom: 40px;">
+                          <i class="fas fa-times" onclick="document.getElementById('post-4').style.display='none'" ></i>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                    <div class="back-drop" onclick="document.getElementById('post-5').style.display='grid'">
+                      <div class="post-like">
+                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                      </div>
+                    </div>
+                    <div class="post-information" id="post-5">
+                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-text">
+                        <div style="text-align: right;  margin-bottom: 40px;">
+                          <i class="fas fa-times" onclick="document.getElementById('post-5').style.display='none'" ></i>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                    <div class="back-drop" onclick="document.getElementById('post-6').style.display='grid'">
+                      <div class="post-like">
+                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                      </div>
+                    </div>
+                    <div class="post-information" id="post-6">
+                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-text">
+                        <div style="text-align: right;  margin-bottom: 40px;">
+                          <i class="fas fa-times" onclick="document.getElementById('post-6').style.display='none'" ></i>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                    <div class="back-drop" onclick="document.getElementById('post-7').style.display='grid'">
+                      <div class="post-like">
+                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                      </div>
+                    </div>
+                    <div class="post-information" id="post-7">
+                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-text">
+                        <div style="text-align: right;  margin-bottom: 40px;">
+                          <i class="fas fa-times" onclick="document.getElementById('post-7').style.display='none'" ></i>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                    <div class="back-drop" onclick="document.getElementById('post-8').style.display='grid'">
+                      <div class="post-like">
+                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                      </div>
+                    </div>
+                    <div class="post-information" id="post-8">
+                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-text">
+                        <div style="text-align: right;  margin-bottom: 40px;">
+                          <i class="fas fa-times" onclick="document.getElementById('post-8').style.display='none'" ></i>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                    <div class="back-drop" onclick="document.getElementById('post-9').style.display='grid'">
+                      <div class="post-like">
+                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                      </div>
+                    </div>
+                    <div class="post-information" id="post-9">
+                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-text">
+                        <div style="text-align: right;  margin-bottom: 40px;">
+                          <i class="fas fa-times" onclick="document.getElementById('post-9').style.display='none'" ></i>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
+                      </div>
+                    </div>
+                  </div>
+
+
+              </div>
+            </center>
+
+        </div>
+    </div>
+</body>
+</html>
