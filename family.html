@@ -2,57 +2,247 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <style>
-            .sectionProfile{
-                display: grid;
-                grid-template-columns: 1fr 5fr;
-            }
-            .profile{
-                box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.2);
-                padding: 20px;
-            }
-            areaProfile{
-                display: grid;
-                grid-template-columns: 1fr;
-                background-color: teal;
-            }
-        </style>
+        
     </head>
     <body>
-        <div class="sectionProfile">
-            <div class="profile">
-                <img src="home.pdf" alt="profile">
-                <div class="name">My name is Khaimook</div>
-                <div class="name">I am beautiful student!</div>
-                <div class="box" onclick="load('#content','home.html')">
-                    <div class="icon"><i class="fas fa-home"></i></div>
-                    <div class="text-box">&nbsp;&nbsp;Home</div>
-                  </div>
-                  
-                  <div class="box" onclick="load('#content','profile.html')">
-                    <div class="icon"><i class="fas fa-id-card"></i></div>
-                    <div class="text-box">&nbsp;&nbsp;Profile</div>
-                  </div>
-                  
-                  <div class="box" onclick="load('#content','education.html')">
-                    <div class="icon"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="text-box">&nbsp;&nbsp;&nbsp;Education</div>
-                  </div>
-                 
-                  <div class="box" onclick="load('#content','family.html')">
-                     <div class="icon"><i class="fas fa-users"></i></div>
-                     <div class="text-box">&nbsp;&nbsp;&nbsp;Family</div>
-                   </div>
-                 
-                   <div class="box" onclick="load('#content','article.html')">
-                     <div class="icon"><i class="fas fa-book"></i></div>
-                     <div class="text-box">&nbsp;&nbsp;&nbsp;Article</div>
-                   </div>
-                  
-                  <div class="box" onclick="load('#content','contact.html')">
-                    <div class="icon"><i class="fas fa-phone"></i></div>
-                    <div class="text-box">&nbsp;&nbsp;Contact</div>
-                  </div>
+        <div class="section">
+          <div class="profile">
+            <img src="logokmitl.jpg" alt="profile">
+            
+            <div class="box" style="padding-left: 30px; justify-content: left;" onclick="load('#content','home.html')">
+                <div class="icon"><i class="fas fa-home"></i></div>
+                <div class="text-box">&nbsp;&nbsp;&nbsp;&nbsp;Home</div>
             </div>
+              
+            <div class="box" style="padding-left: 30px; justify-content: left;" onclick="load('#content','profile.html')">
+                <div class="icon"><i class="fas fa-id-card"></i></div>
+                <div class="text-box">&nbsp;&nbsp;&nbsp;&nbsp;Profile</div>
+            </div>
+              
+            <div class="box" style="padding-left: 30px; justify-content: left;"onclick="load('#content','education.html')">
+                <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="text-box">&nbsp;&nbsp;&nbsp;Education</div>
+            </div>
+             
+            <div class="box-active" style="padding-left: 30px; justify-content: left;" onclick="load('#content','family.html')">
+                <div class="icon"><i class="fas fa-users"></i></div>
+                <div class="text-box">&nbsp;&nbsp;&nbsp;Family</div>
+            </div>
+             
+            <div class="box" style="padding-left: 30px; justify-content: left;" onclick="load('#content','article.html')">
+                <div class="icon"><i class="fas fa-book"></i></div>
+                <div class="text-box">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Knowledge</div>
+            </div>
+              
+            <div class="box" style="padding-left: 30px; justify-content: left;" onclick="load('#content','contact.html')">
+                <div class="icon"><i class="fas fa-phone"></i></div>
+                <div class="text-box">&nbsp;&nbsp;&nbsp;&nbsp;Contact</div>
+            </div>
+          </div>
+
+          <div class="areaProfile">     
+            <div class="profile-head">
+              <div class="head-img-border"><div class="head-img"></div></div>
+              <div class="head-text">
+                <div>
+                  <h1>Family</h1>
+                  <div class="head-text-name">There are 5 peoole in my family. My mother and 3 sisters.</div>
+                  <div class="head-text-name">[Papa Mom Mam Mas May Mook]</div>
+
+                </div>
+              </div>
+            </div>
+            
+            <div class="story">
+            
+              <div class="story-grid">
+                <center>
+                <div class="border-img"><div class="story-img" style="background-image: url('chb.jpg');"></div></div>
+                <div class="story-text">CHB.48</div>
+                </center>
+              </div>
+
+              <div class="story-grid">
+                <center>
+                <div class="border-img"><div class="story-img" style="background-image: url('ite3.jpg');"></div></div>
+                <div class="story-text">ITE.22</div>
+                </center>
+              </div>
+
+              <div class="story-grid">
+                <center>
+                <div class="border-img"><div class="story-img" style="background-image: url('travel.jpg');"></div></div>
+                <div class="story-text">Travel</div>
+                </center>
+              </div>
+
+              <div class="story-grid">
+                <center>
+                <div class="border-img"><div class="story-img" style="background-image: url('cobie.jpg');"></div></div>
+                <div class="story-text">Cobie</div>
+                </center>
+              </div>
+
+              <div class="story-grid">
+                <center>
+                <div class="border-img"><div class="story-img" style="background-image: url('family.JPG');"></div></div>
+                <div class="story-text">Family</div>
+                </center>
+              </div>
+
+              <div class="story-grid">
+                <center>
+                <div class="border-img"><div class="story-img" style="background-image: url('molly.jpg');"></div></div>
+                <div class="story-text">Molly</div>
+                </center>
+              </div>
+
+              <div class="story-grid">
+                <center>
+                <div class="border-img"><div class="story-img" style="background-image: url('bestfriend.jpg');"></div></div>
+                <div class="story-text">Bestfriend</div>
+                </center>
+              </div>
+            </div>
+            <!-- end story -->
+            <div class="profile-nav">
+              <div class="profile-nav-link" onclick="load('#content','profile.html')">
+                <i class="fas fa-id-card"></i> Profile
+              </div>
+
+              <div class="profile-nav-link" onclick="load('#content','education.html')">
+                <i class="fas fa-graduation-cap"></i> Education
+              </div>
+
+              <div class="profile-nav-link-active" onclick="load('#content','family.html')">
+                <i class='fas fa-users'></i> Family
+              </div>
+
+              <div class='profile-nav-link' onclick="load('#content','article.html')">
+                <i class='fas fa-book'></i> Knowledge
+              </div>
+
+              <div class="profile-nav-link" onclick="load('#content','contact.html')">
+                <i class='fas fa-book'></i> Contact
+              </div>
+            </div>
+
+            <center>
+            <div class="post">
+
+              <div class="post-grid"  style="background-image: url('f1.jpg');">
+                <div class="back-drop" onclick="document.getElementById('post-1').style.display='grid'">
+                  <div class="post-like">
+                    <i class="fas fa-heart"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;999 
+                  </div>
+                </div>
+                <div class="post-information" id="post-1">
+                  <div class="post-information-img" style="background-image: url('f1.jpg');"></div>
+                  <div class="post-information-text">
+                    <div style="text-align: right;  margin-bottom: 40px;">
+                      <i class="fas fa-times" onclick="document.getElementById('post-1').style.display='none'" ></i>
+                    </div>
+                    <h1>Papa</h1>
+                    นายสุวัฒน์ วุฒิกุลประพันธ์ (น้อย) ปัจจุบันเสียชีวิตแล้ว เกิดเมื่อวันพฤหัสที่ 24 เมษายน พ.ศ. 2501
+                  </div>
+                </div>
+              </div>
+
+              <div class="post-grid"  style="background-image: url('f2.jpg');">
+                <div class="back-drop" onclick="document.getElementById('post-2').style.display='grid'">
+                  <div class="post-like">
+                    <i class="fas fa-heart"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;999 
+                  </div>
+                </div>
+                <div class="post-information" id="post-2">
+                  <div class="post-information-img" style="background-image: url('f2.jpg');"></div>
+                  <div class="post-information-text">
+                    <div style="text-align: right;  margin-bottom: 40px;">
+                      <i class="fas fa-times" onclick="document.getElementById('post-2').style.display='none'" ></i>
+                    </div>
+                    <h1>Mom</h1>
+                    น.ส.จันทร์เพ็ญ แย้มปั้น (เพ็ญ) ปัจจุบันอายุ 57 ปี เกิดเมื่อวันจันทร์ที่ 13 เมษายน พ.ศ. 2507 
+                  </div>
+                </div>
+              </div>
+
+              <div class="post-grid"  style="background-image: url('f3.JPG');">
+                <div class="back-drop" onclick="document.getElementById('post-3').style.display='grid'">
+                  <div class="post-like">
+                    <i class="fas fa-heart"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;999 
+                  </div>
+                </div>
+                <div class="post-information" id="post-3">
+                  <div class="post-information-img" style="background-image: url('f3.JPG');"></div>
+                  <div class="post-information-text">
+                    <div style="text-align: right;  margin-bottom: 40px;">
+                      <i class="fas fa-times" onclick="document.getElementById('post-3').style.display='none'" ></i>
+                    </div>
+                    <h1>Mam</h1>
+                    น.ส.วิภาพร วุฒิกุลประพันธ์ (แหม่ม) คนขวาแหม่ม คนซ้ายแม่ ปัจจุบันอายุ 39 ปี เกิดวันพุธที่ 3 กุมภาพันธ์ พ.ศ.2525
+                  </div>
+                </div>
+              </div>
+
+              <div class="post-grid"  style="background-image: url('f4.jpg');">
+                <div class="back-drop" onclick="document.getElementById('post-4').style.display='grid'">
+                  <div class="post-like">
+                    <i class="fas fa-heart"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;999 
+                  </div>
+                </div>
+                <div class="post-information" id="post-4">
+                  <div class="post-information-img" style="background-image: url('f4.jpg');"></div>
+                  <div class="post-information-text">
+                    <div style="text-align: right;  margin-bottom: 40px;">
+                      <i class="fas fa-times" onclick="document.getElementById('post-4').style.display='none'" ></i>
+                    </div>
+                    <h1>Mas</h1>
+                    น.ส.นพมาศ วุฒิกุลประพันธ์ (มาศ) ปัจจุบันอายุ 33 ปี เกิดวันอังคารที่ 15 พฤศจิกายน พ.ศ.2531
+                  </div>
+                </div>
+              </div>
+
+              <div class="post-grid"  style="background-image: url('f5.JPG');">
+                <div class="back-drop" onclick="document.getElementById('post-5').style.display='grid'">
+                  <div class="post-like">
+                    <i class="fas fa-heart"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;999 
+                  </div>
+                </div>
+                <div class="post-information" id="post-5">
+                  <div class="post-information-img" style="background-image: url('f5.JPG');"></div>
+                  <div class="post-information-text">
+                    <div style="text-align: right;  margin-bottom: 40px;">
+                      <i class="fas fa-times" onclick="document.getElementById('post-5').style.display='none'" ></i>
+                    </div>
+                    <h1>May</h1>
+                    น.ส.สุภศจี วุฒิกุลประพันธ์ (เมย์) ปัจจุบันอายุ 27 ปี เกิดวันพุธที่ 13 เมษายน พ.ศ.2537
+                  </div>
+                </div>
+              </div>
+
+              <div class="post-grid"  style="background-image: url('f6.JPG');">
+                <div class="back-drop" onclick="document.getElementById('post-6').style.display='grid'">
+                  <div class="post-like">
+                    <i class="fas fa-heart"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;999 
+                  </div>
+                </div>
+                <div class="post-information" id="post-6">
+                  <div class="post-information-img" style="background-image: url('f6.JPG');"></div>
+                  <div class="post-information-text">
+                    <div style="text-align: right;  margin-bottom: 40px;">
+                      <i class="fas fa-times" onclick="document.getElementById('post-6').style.display='none'" ></i>
+                    </div>
+                    <h1>My family</h1>
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
+        </center>
+
+    </div>
+        </div>
+            
     </body>
 </html>

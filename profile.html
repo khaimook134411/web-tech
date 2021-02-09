@@ -1,75 +1,52 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <style>
-        .sectionProfile{
-            display: grid;
-            grid-template-columns: 1fr 5fr;
-        }
-        .profile{
-            box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.2);
-            padding: 20px;
-        }
-        
-    </style>
-</head>
-
-<body>
+  <body>
     <div class="section">
-        <div class="profile">
-            <img src="home.pdf" alt="profile">
-            <div class="name">My name is Khaimook</div>
-            <div class="name">I am beautiful student!</div>
-            <div class="box" onclick="load('#content','home.html')">
-                <div class="icon"><i class="fas fa-home"></i></div>
-                <div class="text-box">&nbsp;&nbsp;Home</div>
-              </div>
-              
-              <div class="box" onclick="load('#content','profile.html')">
-                <div class="icon"><i class="fas fa-id-card"></i></div>
-                <div class="text-box">&nbsp;&nbsp;Profile</div>
-              </div>
-              
-              <div class="box" onclick="load('#content','education.html')">
-                <div class="icon"><i class="fas fa-graduation-cap"></i></div>
-                <div class="text-box">&nbsp;&nbsp;&nbsp;Education</div>
-              </div>
-             
-              <div class="box" onclick="load('#content','family.html')">
-                 <div class="icon"><i class="fas fa-users"></i></div>
-                 <div class="text-box">&nbsp;&nbsp;&nbsp;Family</div>
-               </div>
-             
-               <div class="box" onclick="load('#content','article.html')">
-                 <div class="icon"><i class="fas fa-book"></i></div>
-                 <div class="text-box">&nbsp;&nbsp;&nbsp;Article</div>
-               </div>
-              
-              <div class="box" onclick="load('#content','contact.html')">
-                <div class="icon"><i class="fas fa-phone"></i></div>
-                <div class="text-box">&nbsp;&nbsp;Contact</div>
-              </div>
-        </div>
-        <div class="areaProfile">     
-                <!-- <h1>My profile</h1>
-                <hr align="center" width="1000"><br>  
-                <img src="https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524" alt="ProfileKH" width="200px" height="250px" >
-                <p>ชื่อเล่น ไข่มุก</p>
-                <p>Nickname Khaimook</p>
-                <p>ชื่อ นางสาวธนาพร นามสกุล วุฒิกุลประพันธ์</p>
-                <p>Name Ms.Thanaphorn Surname Wutthikunprapan</p>
-                <p>เกิดวันพุธที่ 1 พฤศจิกายน 2543</p>
-                <p>My birthday is on Wednesday 1st November 2000</p> -->
 
+      <div class="profile">
+        <img src="logokmitl.jpg" alt="profile">
+        
+        <div class="box" style="padding-left: 30px; justify-content: left;" onclick="load('#content','home.html')">
+            <div class="icon"><i class="fas fa-home"></i></div>
+            <div class="text-box">&nbsp;&nbsp;&nbsp;&nbsp;Home</div>
+        </div>
+          
+        <div class="box-active" style="padding-left: 30px; justify-content: left;" onclick="load('#content','profile.html')">
+            <div class="icon"><i class="fas fa-id-card"></i></div>
+            <div class="text-box">&nbsp;&nbsp;&nbsp;&nbsp;Profile</div>
+        </div>
+          
+        <div class="box" style="padding-left: 30px; justify-content: left;"onclick="load('#content','education.html')">
+            <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="text-box">&nbsp;&nbsp;&nbsp;Education</div>
+        </div>
+         
+        <div class="box" style="padding-left: 30px; justify-content: left;" onclick="load('#content','family.html')">
+            <div class="icon"><i class="fas fa-users"></i></div>
+            <div class="text-box">&nbsp;&nbsp;&nbsp;Family</div>
+        </div>
+         
+        <div class="box" style="padding-left: 30px; justify-content: left;" onclick="load('#content','article.html')">
+            <div class="icon"><i class="fas fa-book"></i></div>
+            <div class="text-box">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Knowledge</div>
+        </div>
+          
+        <div class="box" style="padding-left: 30px; justify-content: left;" onclick="load('#content','contact.html')">
+            <div class="icon"><i class="fas fa-phone"></i></div>
+            <div class="text-box">&nbsp;&nbsp;&nbsp;&nbsp;Contact</div>
+        </div>
+    </div>
+
+        <div class="areaProfile">     
                 <div class="profile-head">
                   <div class="head-img-border"><div class="head-img"></div></div>
                   <div class="head-text">
                     <div>
+                      <h1>Profile</h1>
                       <div class="head-text-name">Khaimook</div>
-                      <div class="head-text-name">Thanawat Talabtong</div>
-                      <div class="head-text-name">Khaimook</div>
+                      <div class="head-text-name">Thanaphorn Wutthikunprapan</div>
+                      <div class="head-text-name">I'm 20 years old.</div>
                     </div>
                   </div>
                 </div>
@@ -78,138 +55,154 @@
                 
                   <div class="story-grid">
                     <center>
-                    <div class="border-img"><div class="story-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div></div>
-                    <div class="story-text">xxxxxx</div>
+                    <div class="border-img"><div class="story-img" style="background-image: url('chb.jpg');"></div></div>
+                    <div class="story-text">CHB.48</div>
                     </center>
                   </div>
 
                   <div class="story-grid">
                     <center>
-                    <div class="border-img"><div class="story-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div></div>
-                    <div class="story-text">xxxxxx</div>
+                    <div class="border-img"><div class="story-img" style="background-image: url('ite3.jpg');"></div></div>
+                    <div class="story-text">ITE.22</div>
                     </center>
                   </div>
 
                   <div class="story-grid">
                     <center>
-                    <div class="border-img"><div class="story-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div></div>
-                    <div class="story-text">xxxxxx</div>
+                    <div class="border-img"><div class="story-img" style="background-image: url('travel.jpg');"></div></div>
+                    <div class="story-text">Travel</div>
                     </center>
                   </div>
 
                   <div class="story-grid">
                     <center>
-                    <div class="border-img"><div class="story-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div></div>
-                    <div class="story-text">xxxxxx</div>
+                    <div class="border-img"><div class="story-img" style="background-image: url('cobie.jpg');"></div></div>
+                    <div class="story-text">Cobie</div>
                     </center>
                   </div>
 
                   <div class="story-grid">
                     <center>
-                    <div class="border-img"><div class="story-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div></div>
-                    <div class="story-text">xxxxxx</div>
+                    <div class="border-img"><div class="story-img" style="background-image: url('family.JPG');"></div></div>
+                    <div class="story-text">Family</div>
                     </center>
                   </div>
 
                   <div class="story-grid">
                     <center>
-                    <div class="border-img"><div class="story-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div></div>
-                    <div class="story-text">xxxxxx</div>
+                    <div class="border-img"><div class="story-img" style="background-image: url('molly.jpg');"></div></div>
+                    <div class="story-text">Molly</div>
                     </center>
                   </div>
 
                   <div class="story-grid">
                     <center>
-                    <div class="border-img"><div class="story-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div></div>
-                    <div class="story-text">xxxxxx</div>
+                    <div class="border-img"><div class="story-img" style="background-image: url('bestfriend.jpg');"></div></div>
+                    <div class="story-text">Bestfriend</div>
                     </center>
                   </div>
                 </div>
                 <!-- end story -->
                 <div class="profile-nav">
                   <div class="profile-nav-link-active">
-                    <i class="fas fa-home"></i> Profile
+                    <i class="fas fa-id-card"></i> Profile
                   </div>
 
                   <div class="profile-nav-link" onclick="load('#content','education.html')">
-                    <i class="fas fa-home"></i> Education
+                    <i class="fas fa-graduation-cap"></i> Education
                   </div>
 
-                  <div class="profile-nav-link">
-                    <i class="fas fa-home"></i> Family
+                  <div class="profile-nav-link" onclick="load('#content','family.html')">
+                    <i class='fas fa-users'></i> Family
                   </div>
 
-                  <div class="profile-nav-link">
-                    <i class="fas fa-home"></i> Knowledge
+                  <div class='profile-nav-link' onclick="load('#content','article.html')">
+                    <i class='fas fa-book'></i> Knowledge
                   </div>
 
-                  <div class="profile-nav-link">
-                    <i class="fas fa-home"></i> Contact
+                  <div class="profile-nav-link" onclick="load('#content','contact.html')">
+                    <i class='fas fa-book'></i> Contact
                   </div>
                 </div>
 
                 <center>
                 <div class="post">
 
-                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                  <div class="post-grid"  style="background-image: url('p1.jpg');">
                     <div class="back-drop" onclick="document.getElementById('post-1').style.display='grid'">
                       <div class="post-like">
-                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                        <i class="fas fa-heart"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;999 
                       </div>
                     </div>
                     <div class="post-information" id="post-1">
-                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-img" style="background-image: url('p1.jpg');"></div>
                       <div class="post-information-text">
                         <div style="text-align: right;  margin-bottom: 40px;">
                           <i class="fas fa-times" onclick="document.getElementById('post-1').style.display='none'" ></i>
                         </div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
+                        <h1>Early life</h1>
+                        ธนาพร วุฒิกุลประพันธ์ ชื่อเล่น ไข่มุก เกิดเมื่อวันพุธที่ 1 พฤศจิกายน พ.ศ. 2543 ปัจจุบันอายุ 20 ปี เกิดจังหวัดพิษณุโลก ภูมิลำเนาเป็นคนพิจิตร ปัจจุบันอาศัยอยู่ในกรุงเทพมหานคร ตอนอนุบาลเคยประกวดนางนพมาศได้รางวัลขวัญใจประชาชน
                       </div>
                     </div>
                   </div>
 
-                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                  <div class="post-grid"  style="background-image: url('post-2.jpg');">
                     <div class="back-drop" onclick="document.getElementById('post-2').style.display='grid'">
                       <div class="post-like">
-                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                        <i class="fas fa-heart"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;999 
                       </div>
                     </div>
                     <div class="post-information" id="post-2">
-                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-img" style="background-image: url('post-2.jpg');"></div>
                       <div class="post-information-text">
                         <div style="text-align: right;  margin-bottom: 40px;">
                           <i class="fas fa-times" onclick="document.getElementById('post-2').style.display='none'" ></i>
                         </div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
+                        <h1>Present life</h1>
+                        ไข่มุก 
+                        <br><b><u>ส่วนสูง</u> :</b>156 ซม.
+                        <br><b><u>น้ำหนัก</u> :</b> 52 กก.
+                        <br>ปัจจุบันศึกษาอยู่ที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหาร ลาดกระบัง ชั้นปีที่ 2 คณะวิศวกรรมศาสตร์ สาขาวิศวกรรมสารสนเทศ 
+                        <br><b><u>เกรดเฉลี่ยปัจจุบัน</u> 3.30</b> 
                       </div>
                     </div>
                   </div>
 
-                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                  <div class="post-grid"  style="background-image: url('post-3.jpg');">
                     <div class="back-drop" onclick="document.getElementById('post-3').style.display='grid'">
                       <div class="post-like">
-                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                        <i class="fas fa-heart"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;999 
                       </div>
                     </div>
                     <div class="post-information" id="post-3">
-                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-img" style="background-image: url('post-3.jpg');"></div>
                       <div class="post-information-text">
                         <div style="text-align: right;  margin-bottom: 40px;">
                           <i class="fas fa-times" onclick="document.getElementById('post-3').style.display='none'" ></i>
                         </div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
+                        <h1>About me</h1>
+                        <b>สีที่ชอบ :</b> สีฟ้า
+                        <br><b>ฤดูที่ชอบ :</b> ชอบอากาศเย็น แต่ชอบฟีลฝนตก
+                        <br><b>อาหารที่ชอบ :</b> เส้นเล็กแห้ง
+                        <br><b>เครื่องดื่ม :</b> ชาเขียว น้ำอัดลม
+                        <br><b>นิสัย :</b> ซื่อสัตย์ จริงใจ ทุ่มเท 
+                        <br><b>ความสามารถพิเศษ :</b> volleyball 
+                        <br><b>กิจกรรมยามว่าง :</b> เกมไพ่สามก๊ก rov
+                        <br><b>สัตว์เลี้ยง :</b> หมาชื่อโคบี้
+                        <br><b>ภาพยนตร์สุดโปรดในตำนาน :</b> Harry Potter
+                        <br><b>คติประจำใจ :</b>คนที่เรารักต้องสบาย
                       </div>
                     </div>
                   </div>
 
-                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                  <!-- <div class="post-grid"  style="background-image: url('post-4.jpg');">
                     <div class="back-drop" onclick="document.getElementById('post-4').style.display='grid'">
                       <div class="post-like">
-                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                        <i class="fas fa-heart"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;999 
                       </div>
                     </div>
                     <div class="post-information" id="post-4">
-                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-img" style="background-image: url('post-4.jpg');"></div>
                       <div class="post-information-text">
                         <div style="text-align: right;  margin-bottom: 40px;">
                           <i class="fas fa-times" onclick="document.getElementById('post-4').style.display='none'" ></i>
@@ -219,14 +212,14 @@
                     </div>
                   </div>
 
-                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                  <div class="post-grid"  style="background-image: url('post-5.jpg');">
                     <div class="back-drop" onclick="document.getElementById('post-5').style.display='grid'">
                       <div class="post-like">
-                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                        <i class="fas fa-heart"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;999 
                       </div>
                     </div>
                     <div class="post-information" id="post-5">
-                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-img" style="background-image: url('post-5.jpg');"></div>
                       <div class="post-information-text">
                         <div style="text-align: right;  margin-bottom: 40px;">
                           <i class="fas fa-times" onclick="document.getElementById('post-5').style.display='none'" ></i>
@@ -236,14 +229,14 @@
                     </div>
                   </div>
 
-                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                  <div class="post-grid"  style="background-image: url('post-6.jpg');">
                     <div class="back-drop" onclick="document.getElementById('post-6').style.display='grid'">
                       <div class="post-like">
-                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                        <i class="fas fa-heart"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;999 
                       </div>
                     </div>
                     <div class="post-information" id="post-6">
-                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-img" style="background-image: url('post-6.jpg');"></div>
                       <div class="post-information-text">
                         <div style="text-align: right;  margin-bottom: 40px;">
                           <i class="fas fa-times" onclick="document.getElementById('post-6').style.display='none'" ></i>
@@ -251,55 +244,60 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
                       </div>
                     </div>
-                  </div>
+                  </div> -->
 
-                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                  <div class="post-grid"  style="background-image: url('post-7.jpg');">
                     <div class="back-drop" onclick="document.getElementById('post-7').style.display='grid'">
                       <div class="post-like">
-                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                        <i class="fas fa-heart"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;999 
                       </div>
                     </div>
                     <div class="post-information" id="post-7">
-                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-img" style="background-image: url('post-7.jpg');"></div>
                       <div class="post-information-text">
                         <div style="text-align: right;  margin-bottom: 40px;">
                           <i class="fas fa-times" onclick="document.getElementById('post-7').style.display='none'" ></i>
                         </div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
+                        <h1>Cobie</h1>
+                        โคบี้ อายุ 10 ปีแล้ว เป็นเสมือนครอบครัว เป็นทั้งสัตว์เลี้ยงทั้งเพื่อนทั้งลูกสาว ไม่เคยทิ้งเราไปไหน รักโคบี้มาก อยากให้โคบี้อยู่ด้วยกันนานๆ
+                        <br><b>อาหารที่ชอบ :</b> หมูปิ้ง
+                        <br><b>ขนมที่ชอบ :</b> สติกแท่งรสนม
                       </div>
                     </div>
                   </div>
 
-                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                  <div class="post-grid"  style="background-image: url('post-8.jpg');">
                     <div class="back-drop" onclick="document.getElementById('post-8').style.display='grid'">
                       <div class="post-like">
-                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                        <i class="fas fa-heart"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;999 
                       </div>
                     </div>
                     <div class="post-information" id="post-8">
-                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-img" style="background-image: url('post-8.jpg');"></div>
                       <div class="post-information-text">
                         <div style="text-align: right;  margin-bottom: 40px;">
                           <i class="fas fa-times" onclick="document.getElementById('post-8').style.display='none'" ></i>
                         </div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
+                        <h1>KMITL Friends</h1>
+                        เพื่อนๆในมหาลัยน่ารักทุกคน ช่วยกันเรียน ช่วยเหลือกันตลอด ขอบคุณนะ 
                       </div>
                     </div>
                   </div>
 
-                  <div class="post-grid"  style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');">
+                  <div class="post-grid"  style="background-image: url('post-9.jpg');">
                     <div class="back-drop" onclick="document.getElementById('post-9').style.display='grid'">
                       <div class="post-like">
-                        <i class="fas fa-home"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i>&nbsp;&nbsp;999 
+                        <i class="fas fa-heart"></i> &nbsp;&nbsp;999 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;999 
                       </div>
                     </div>
                     <div class="post-information" id="post-9">
-                      <div class="post-information-img" style="background-image: url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/50422478_1089429031238515_5625238875115880448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=84a396&_nc_eui2=AeHjfrOkRG0bDkrHYMeLJiifbI_X5YR0yYZsj9flhHTJhuWQ9LTlkAth2Y_t2iPRCRc3Jjml_5bwYYb9-oN-ypj2&_nc_ohc=mgzLSSmvi_8AX8_gW9X&_nc_ht=scontent.fbkk5-4.fna&oh=d111468aa58821a9085f9448f9252377&oe=6045E524');"></div>
+                      <div class="post-information-img" style="background-image: url('post-9.jpg');"></div>
                       <div class="post-information-text">
                         <div style="text-align: right;  margin-bottom: 40px;">
                           <i class="fas fa-times" onclick="document.getElementById('post-9').style.display='none'" ></i>
                         </div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias sequi nemo similique quaerat nisi officiis sint quibusdam quis in quam exercitationem voluptates, beatae dolor debitis qui aut nesciunt temporibus.
+                        <h1>CHB Friends</h1>
+                        เพื่อนสมัยมัธยม ปัจจุบันยังคบกันอยู่ มี อ้อมใจ อ้อมอิ่ม ป้อน เพลง เกล เกด แตงโม หงส์ ผ่านไรด้วยกันมามาก สนุกมาด้วยกัน ทุกข์มาด้วยกัน ร้องไห้ อกหักมาด้วยกัน รักมากๆ 
                       </div>
                     </div>
                   </div>
@@ -310,5 +308,5 @@
 
         </div>
     </div>
-</body>
+  </body>
 </html>

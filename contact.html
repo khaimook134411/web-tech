@@ -1,86 +1,78 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+    </head>
 
-<head>
- <meta charset="utf-8" />
- <title>this is title</title>
- <link rel="stylesheet" href="nav.css">
- <script src="https://code.jquery.com/jquery-1.9.0rc1.js"></script>
- <script src="https://code.jquery.com/jquery-migrate-1.0.0rc1.js"></script>
- <script src="https://kit.fontawesome.com/54cecfcf8f.js" crossorigin="anonymous"></script>
+    <body>
+        <div class="section">
+            <div class="profile">
+                <img src="logokmitl.jpg" alt="profile">
+                
+                <div class="box" style="padding-left: 30px; justify-content: left;" onclick="load('#content','home.html')">
+                    <div class="icon"><i class="fas fa-home"></i></div>
+                    <div class="text-box">&nbsp;&nbsp;&nbsp;&nbsp;Home</div>
+                </div>
+                  
+                <div class="box" style="padding-left: 30px; justify-content: left;" onclick="load('#content','profile.html')">
+                    <div class="icon"><i class="fas fa-id-card"></i></div>
+                    <div class="text-box">&nbsp;&nbsp;&nbsp;&nbsp;Profile</div>
+                </div>
+                  
+                <div class="box" style="padding-left: 30px; justify-content: left;"onclick="load('#content','education.html')">
+                    <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="text-box">&nbsp;&nbsp;&nbsp;Education</div>
+                </div>
+                 
+                <div class="box" style="padding-left: 30px; justify-content: left;" onclick="load('#content','family.html')">
+                    <div class="icon"><i class="fas fa-users"></i></div>
+                    <div class="text-box">&nbsp;&nbsp;&nbsp;Family</div>
+                </div>
+                 
+                <div class="box" style="padding-left: 30px; justify-content: left;" onclick="load('#content','article.html')">
+                    <div class="icon"><i class="fas fa-book"></i></div>
+                    <div class="text-box">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Knowledge</div>
+                </div>
+                  
+                <div class="box-active" style="padding-left: 30px; justify-content: left;" onclick="load('#content','contact.html')">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <div class="text-box">&nbsp;&nbsp;&nbsp;&nbsp;Contact</div>
+                </div>
+            </div>
+            
+            <div class="area">
+                
+                <center><h1>Contact Me</h1></center><br>
 
-</head>
-<body>
-
-    <div class="section">
-        <div class="profile">
-            <img src="home.pdf" alt="profile">
-            <div class="name">62010394</div>
-            <div class="name">KMITL</div>
-            <div class="box" onclick="load('#content','home.html')">
-                <div class="icon"><i class="fas fa-home"></i></div>
-                <div class="text-box">&nbsp;&nbsp;Home</div>
-              </div>
-              
-              <div class="box" onclick="load('#content','profile.html')">
-                <div class="icon"><i class="fas fa-id-card"></i></div>
-                <div class="text-box">&nbsp;&nbsp;Profile</div>
-              </div>
-              
-              <div class="box" onclick="load('#content','education.html')">
-                <div class="icon"><i class="fas fa-graduation-cap"></i></div>
-                <div class="text-box">&nbsp;&nbsp;&nbsp;Education</div>
-              </div>
-             
-              <div class="box" onclick="load('#content','family.html')">
-                 <div class="icon"><i class="fas fa-users"></i></div>
-                 <div class="text-box">&nbsp;&nbsp;&nbsp;Family</div>
-               </div>
-             
-               <div class="box" onclick="load('#content','article.html')">
-                 <div class="icon"><i class="fas fa-book"></i></div>
-                 <div class="text-box">&nbsp;&nbsp;&nbsp;Article</div>
-               </div>
-              
-              <div class="box" onclick="load('#content','contact.html')">
-                <div class="icon"><i class="fas fa-phone"></i></div>
-                <div class="text-box">&nbsp;&nbsp;Contact</div>
-              </div>
+                <div class="container-grid">
+                    <div class="grid">
+                        <a href="tel:0818879752"><img src="https://i.pinimg.com/originals/84/4e/8c/844e8cd4ab26c82286238471f0e5a901.png" alt="img" width="100%"></a>
+                        <div class="text">Telphone : 0818879752</div>
+                    </div>
+                    <div class="grid">
+                        <a href="https://www.facebook.com/thanaphorn.wutthikulpraphan.3/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt="img" width="100%"></a>
+                        <div class="text">Facebook : khaimook Wutthikulprapan</div>
+                    </div>
+                    <div class="grid">    
+                        <a href="https://line.me/ti/p/a-D3XiAVA-"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/LINE_logo.svg/600px-LINE_logo.svg.png" alt="img" width="100%"></a>
+                        <div class="text">Line ID : khaimook134411</div>
+                    </div>
+                    <div class="grid">
+                        <a href="https://www.instagram.com/khaimook.t/"><img src="ig.png" alt="img" width="100%"></a>
+                        <div class="text">instagram : khaimook.t</div>
+                    </div>
+                    <div class="grid">     
+                        <a href="mailto:twutthikunprapan@gmail.com"><img src="gmail.png" alt="img" width="100%"></a>
+                        <div class="text">Gmail : twutthikunprapan@gmail.com<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;62010394@kmitl.ac.th</div>
+                    </div>
+                    <div class="grid">
+                        <a href="https://www.google.com/maps/dir/13.7894338,100.5858792/665+ซอย+ฉลองกรุง+1+แขวง+ลาดกระบัง+เขตลาดกระบัง+กรุงเทพมหานคร+10520/@13.7500162,100.5293412,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x311d6652513995e1:0x8c013a1dfede36ee!2m2!1d100.763733!2d13.7278002"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Google_Maps_icon.svg/1200px-Google_Maps_icon.svg.png" alt="img" width="100%"></a>
+                        <div class="text">Location : 665 Chalongkrung 1 Ladkrabang Bangkok 10520</div>
+                    </div>
+                
+                </div>
+            </div>
         </div>
-    
-    <div class="area">
-        
-        <center><h1>Contact Me</h1></center><br>
 
-        <div class="container-grid">
-            <div class="grid">
-                <a href="tel:0818879752"><img src="https://i.pinimg.com/originals/84/4e/8c/844e8cd4ab26c82286238471f0e5a901.png" alt="img" width="100%"></a>
-                <div class="text">Telphone : 0818879752</div>
-            </div>
-            <div class="grid">
-                <a href="https://www.facebook.com/thanaphorn.wutthikulpraphan.3/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt="img" width="100%"></a>
-                <div class="text">Facebook : khaimook Wutthikulprapan</div>
-            </div>
-            <div class="grid">    
-                <a href="https://line.me/ti/p/a-D3XiAVA-"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/LINE_logo.svg/600px-LINE_logo.svg.png" alt="img" width="100%"></a>
-                <div class="text">Line ID : khaimook134411</div>
-            </div>
-            <div class="grid">
-                <a href="https://www.instagram.com/khaimook.t/"><img src="ig.png" alt="img" width="100%"></a>
-                <div class="text">instagram : khaimook.t</div>
-            </div>
-            <div class="grid">     
-                <a href="mailto:twutthikunprapan@gmail.com"><img src="gmail.png" alt="img" width="100%"></a>
-                <div class="text">Gmail : twutthikunprapan@gmail.com<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;62010394@kmitl.ac.th</div>
-            </div>
-            <div class="grid">
-                <a href="https://www.google.com/maps/dir/13.7894338,100.5858792/665+ซอย+ฉลองกรุง+1+แขวง+ลาดกระบัง+เขตลาดกระบัง+กรุงเทพมหานคร+10520/@13.7500162,100.5293412,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x311d6652513995e1:0x8c013a1dfede36ee!2m2!1d100.763733!2d13.7278002"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Google_Maps_icon.svg/1200px-Google_Maps_icon.svg.png" alt="img" width="100%"></a>
-                <div class="text">Location : 665 Chalongkrung 1 Ladkrabang Bangkok 10520</div>
-            </div>
-        
-        </div>
-    </div>
-</div>
-
-</body>
+    </body>
 </html>

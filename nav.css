@@ -76,9 +76,10 @@ body{
     grid-template-columns: 1fr 5fr;
 }
 
-.profile{
+.profile{  
     box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.2);
     padding: 20px;
+    background-color: white;
 }
 
 .profile img{
@@ -258,6 +259,17 @@ body{
     font-size: 15px;
 }
 
+.box-active{
+    background:black;
+    color: rgb(184, 83, 43);
+    display: flex;
+    justify-content: left; 
+    padding: 15px 0;
+    padding-left: 30px;
+    border-right: 10px solid rgb(184, 83, 43);
+}
+
+
 .post{
     margin: 0 30px;
     margin-top: -50px;
@@ -324,5 +336,6 @@ body{
     background-color: whitesmoke;
     text-align: justify;
 }
+
 
 
